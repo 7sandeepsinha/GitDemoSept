@@ -12,5 +12,9 @@ public class Main {
         List<Car> carList = new ArrayList<>(Arrays.asList(c2, c1, c4, c3));
         carList.sort(new CarPriceComparator());
         System.out.println(carList);
+        // SORT the cars list by their maxSpeed
+        System.out.println(":: Sorting cars by their maxSpeed ::");
+        carList.sort(new CarMaxSpeedComparator());
+        System.out.println(carList);
     }
 }
