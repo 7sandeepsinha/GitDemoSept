@@ -2,11 +2,27 @@ public class Car {
     private int price;
     private int engineSize;
     private int maxSpeed;
+    private int rating;
 
     public Car(int price, int engineSize, int maxSpeed) {
         this.price = price;
         this.engineSize = engineSize;
         this.maxSpeed = maxSpeed;
+    }
+
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
+
+    public Car(int price, int engineSize, int maxSpeed, int rating) {
+        this.price = price;
+        this.engineSize = engineSize;
+        this.maxSpeed = maxSpeed;
+        this.rating = rating;
     }
 
     public int getPrice() {
