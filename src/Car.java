@@ -2,6 +2,7 @@ public class Car {
     private int price;
     private int engineSize;
     private int maxSpeed;
+    private int noOfSeats;
 
     public Car(int price, int engineSize, int maxSpeed) {
         this.price = price;
