@@ -1,5 +1,5 @@
 public class Car {
-    private int price;
+    private double price;
     private int engineSize;
     private int maxSpeed;
 
@@ -9,7 +9,7 @@ public class Car {
         this.maxSpeed = maxSpeed;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
