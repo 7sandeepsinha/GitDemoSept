@@ -2,11 +2,13 @@ public class Car {
     private int price;
     private int engineSize;
     private int maxSpeed;
+    private String color;
 
-    public Car(int price, int engineSize, int maxSpeed) {
+    public Car(int price, int engineSize, int maxSpeed, String color) {
         this.price = price;
         this.engineSize = engineSize;
         this.maxSpeed = maxSpeed;
+        this.color = color;
     }
 
     public int getPrice() {
@@ -33,12 +35,21 @@ public class Car {
         this.maxSpeed = maxSpeed;
     }
 
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
     @Override
     public String toString() {
         return "Car{" +
                 "price=" + price +
                 ", engineSize=" + engineSize +
                 ", maxSpeed=" + maxSpeed +
+                ", color='" + color + '\'' +
                 '}';
     }
 }
