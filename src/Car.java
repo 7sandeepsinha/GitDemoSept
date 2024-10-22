@@ -2,11 +2,14 @@ public class Car {
     private int price;
     private int engineSize;
     private int maxSpeed;
+    public Boolean isAutomatic;
+    
 
-    public Car(int price, int engineSize, int maxSpeed) {
+    public Car(int price, int engineSize, int maxSpeed,Boolean isAutomatic) {
         this.price = price;
         this.engineSize = engineSize;
         this.maxSpeed = maxSpeed;
+        this.isAutomatic = isAutomatic;
     }
 
     public int getPrice() {
